@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rumbidzai Gwinji - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rumbidzai Gwinji | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 50px;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #0d0d0d; color: #e0e0e0; }
+    a { text-decoration: none; }
+
+    /* Navigation Bar */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 50px; background-color: #111; position: sticky; top: 0;
+      border-bottom: 1px solid #222;
     }
-    h1 { color: #333; }
-    p { color: #555; }
+    nav h1 { color: #fff; font-size: 1.5rem; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul li a { color: #bbb; font-weight: 500; transition: color 0.3s; }
+    nav ul li a:hover { color: #a855f7; }
+
+    /* Hero Section */
+    .hero {
+      display: flex; justify-content: center; align-items: center;
+      min-height: 90vh; padding: 0 10%; gap: 50px;
+    }
+    .hero-text { max-width: 500px; }
+    .hero-text h2 { font-size: 1.3rem; color: #4ade80; }
+    .hero-text h1 { font-size: 3rem; margin: 10px 0; color: #fff; }
+    .hero-text h1 span { color: #a855f7; }
+    .hero-text p { font-size: 1.1rem; color: #bbb; margin-bottom: 20px; line-height: 1.6; }
+    .buttons a {
+      display: inline-block; margin-right: 15px; padding: 10px 25px;
+      border-radius: 5px; font-weight: bold; transition: 0.3s ease-in-out;
+    }
+    .resume-btn { border: 1px solid #a855f7; color: #a855f7; }
+    .resume-btn:hover { background-color: #a855f7; color: #0d0d0d; }
+    .contact-btn { border: 1px solid #4ade80; color: #4ade80; }
+    .contact-btn:hover { background-color: #4ade80; color: #0d0d0d; }
+
+    /* Profile Image */
+    .hero img {
+      width: 220px; height: 220px; border-radius: 50%; border: 4px solid #a855f7;
+      box-shadow: 0 0 20px rgba(168,85,247,0.4);
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I’m Rumbidzai Gwinji</h1>
-  <p>Welcome to my personal portfolio website.</p>
-  <p>More projects and info coming soon!</p>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Rumbidzai</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, I’m</h2>
+      <h1>Rumbidzai <span>Gwinji</span></h1>
+      <p>I’m a data scientist and AI researcher, passionate about using deep learning and data science to solve problems in public health, agriculture, and beyond.</p>
+      <div class="buttons">
+        <a href="#" class="resume-btn">Resume</a>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+      </div>
+    </div>
+    <img src="profile.jpg" alt="Rumbidzai Gwinji">
+  </section>
+
 </body>
 </html>
