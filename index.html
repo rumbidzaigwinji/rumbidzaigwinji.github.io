@@ -26,7 +26,14 @@
       min-height: 90vh; padding: 0 10%; gap: 50px;
     }
     .hero-text { max-width: 500px; }
-    .hero-text h2 { font-size: 1.3rem; color: #4ade80; }
+    .hero-text h2 {
+  font-family: 'Courier New', monospace; /* Different font */
+  font-size: 1rem;                       /* Smaller size */
+  color: #4ade80;                        /* Green accent */
+  letter-spacing: 2px;                   /* More spacing */
+  text-transform: uppercase;             /* Optional: make it all caps */
+}
+
     .hero-text h1 { font-size: 3rem; margin: 10px 0; color: #fff; }
     .hero-text h1 span { color: #a855f7; }
     .hero-text p { font-size: 1.1rem; color: #bbb; margin-bottom: 20px; line-height: 1.6; }
@@ -70,7 +77,7 @@
     <div class="hero-text">
       <h2>Hello, I’m</h2>
       <h1>Rumbidzai <span>Gwinji</span></h1>
-      <p>I’m a data scientist and AI researcher, passionate about using deep learning and data science to solve problems in public health, agriculture, and beyond.</p>
+      <p>I’m a data scientist and AI researcher, passionate about using deep learning and data science to solve problems in public health, agriculture and beyond.</p>
       <div class="buttons">
         <a href="#" class="resume-btn">Resume</a>
         <a href="#contact" class="contact-btn">Contact Me</a>
